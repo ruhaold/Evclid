@@ -1,0 +1,103 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  min-width: 393px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+.reset-btn {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+.reset-btn:not(:disabled) {
+  cursor: pointer;
+}
+
+.reset-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.container {
+  max-width: var(--container-max-widht);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.section-title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.text {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.text:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 24px;
+  }
+
+
+  .text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+  }
+}

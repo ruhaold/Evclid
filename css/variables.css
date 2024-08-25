@@ -1,0 +1,26 @@
+:root {
+  --container-max-widht: 1870px;
+  --container-padding: 50px;
+
+  --white: #ffffff;
+  --black: #000000;
+  --gray: #666;
+  --light-gray: #cacaca;
+  --dark-gray: #414141;
+
+  --default-orange: #ff9900;
+  --hover-orange: #ffb84d;
+  --active-orange: #e1670e;
+  --dark-transp: rgba(0, 0, 0, 0.5);
+  --background: #8ec7f5;
+
+
+  --small-duration: .3s;
+
+}
+
+@media (max-width: 576px) {
+  :root {
+    --container-padding: 15px;
+  }
+}

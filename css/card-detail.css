@@ -1,0 +1,94 @@
+.card-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  max-width: 870px;
+  width: 100%;
+  min-height: 622px;
+  border-radius: 32px;
+  background-color: var(--background);
+  background-image: url(../img/about-us.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.card-detail__content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 50px;
+  border-radius: 32px;
+  color: var(--white);
+  background-color: var(--dark-transp);
+}
+
+.card-detail__text {
+  max-width: 455px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: auto;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+@media (max-width: 1280px) {
+  .card-detail {
+    max-width: 100%;
+    margin-bottom: 32px;
+    min-height: 640px;
+  }
+
+}
+
+@media (max-width: 962px) {
+  .card-detail {
+    min-height: 650px;
+    border-radius: 24px;
+  }
+
+  .card-detail__content {
+    flex-wrap: nowrap;
+    padding: 34px 40px;
+    border-radius: 24px;
+  }
+
+  .card-detail__text {
+    max-width: 366px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-detail {
+    display: block;
+    min-height: auto;
+    border-radius: 16px;
+    background-size: 0;
+    background-image: url(../img/about-320.png);
+    background-color: transparent;
+  }
+
+  .card-detail::before {
+    content: "";
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+    padding-top: calc(200 / 290 * 100%);
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .card-detail__content {
+    flex-wrap: wrap;
+    padding: 0;
+    color: var(--black);
+    background-color: transparent;
+  }
+
+  .card-detail__text {
+    margin-bottom: 11px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+}

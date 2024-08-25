@@ -1,0 +1,151 @@
+.stage {
+  margin-bottom: 100px;
+}
+
+.stage__title {
+  margin-bottom: 32px;
+}
+
+.stage__content-wrap {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: flex-start; */
+}
+
+.stage__content-wrap::after {
+  content: "";
+  margin-top: 10px;
+  width: calc(870 / 1770 * 100%);
+  min-height: 460px;
+  border-radius: 32px;
+  background-color: var(--background);
+  background-size: cover;
+  background-position: center;
+}
+
+.stage__content-wrap--consultation::after {
+  background-image: url(../img/stage.png);
+}
+
+.stage__content {
+  width: calc(760 / 1770 * 100%);
+}
+
+.stage__content-title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.stage__text {
+  margin-bottom: 18px;
+}
+
+.stage__btns {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -32px;
+}
+
+.stage__btn {
+  margin-right: 32px;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 1280px) {
+  .stage {
+    margin-bottom: 80px;
+  }
+
+  .stage__content {
+    width: calc(437 / 924 * 100%);
+  }
+
+  .stage__content-wrap::after {
+    width: calc(437 / 924 * 100%);
+  }
+
+  .stage__content-wrap--consultation::after {
+    background-image: url(../img/stage-1024.png);
+  }
+
+  .stage__text {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 962px) {
+  .stage__content-wrap {
+    flex-direction: column;
+  }
+
+  .stage__title {
+    margin-bottom: 19px;
+  }
+
+  .stage__content {
+    width: 100%;
+    order: 1;
+  }
+
+  .stage__content-wrap::after {
+    width: 100%;
+    min-height: 284px;
+    border-radius: 24px;
+    margin-bottom: 40px;
+  }
+
+  .stage__content-wrap--consultation::after {
+    background-image: url(../img/stage-768.png);
+  }
+
+  br {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .stage {
+    margin-bottom: 92px;
+  }
+
+  .stage__title {
+    margin-bottom: 10px;
+  }
+
+  .stage__content-title {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .stage__content {
+    text-align: left;
+    padding-right: 9px;
+  }
+
+  .stage__content-wrap::after {
+    min-height: 160px;
+    border-radius: 16px;
+    margin-bottom: 16px;
+  }
+
+  .stage__content-wrap--consultation::after {
+    background-image: url(../img/stage-320.png);
+  }
+
+  .stage__btns {
+    flex-wrap: nowrap;
+  }
+
+  .stage__btn {
+    padding: 11px 44px;
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+
+  .stage__btn--second {
+    padding: 11px 32px;
+    margin-right: 0;
+  }
+}
